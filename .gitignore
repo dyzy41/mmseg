@@ -1,4 +1,6 @@
-configs/_base_/
+/__pycache__/
+/.idea/
+mmseg/configs/_base_/*
 work_dirs2/
 base_note
 /work*/
