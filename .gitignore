@@ -1,6 +1,6 @@
 /__pycache__/
 /.idea/
-mmseg/configs/_base_/*
+/configs/_base_/datasets/zdy.py
 work_dirs2/
 base_note
 /work*/
