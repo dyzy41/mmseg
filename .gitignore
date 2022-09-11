@@ -1,6 +1,6 @@
 /__pycache__/
 /.idea/
-/configs/_base_/datasets/zdy.py
+*/configs/_base_/datasets/zdy.py
 work_dirs2/
 base_note
 /work*/
