@@ -274,8 +274,8 @@ class BaseSegmentor(BaseModule, metaclass=ABCMeta):
         # convert to BGR
         color_seg = color_seg[..., ::-1]
 
-        img = img * (1 - opacity) + color_seg * opacity
-        img = img.astype(np.uint8)
+        # img = img * (1 - opacity) + color_seg * opacity
+        # img = img.astype(np.uint8)
         # if out_file specified, do not show image in window
         if out_file is not None:
             show = False
@@ -283,9 +283,9 @@ class BaseSegmentor(BaseModule, metaclass=ABCMeta):
         if show:
             mmcv.imshow(img, win_name, wait_time)
         if out_file is not None:
-            mmcv.imwrite(img, out_file)
+            mmcv.imwrite(color_seg, out_file)
 
         if not (show or out_file):
             warnings.warn('show==False and out_file is not specified, only '
                           'result image will be returned')
-            return img
+            return color_seg
