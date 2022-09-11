@@ -1,4 +1,4 @@
-mmseg/configs/_base_/
+configs/_base_/
 work_dirs2/
 base_note
 /work*/
