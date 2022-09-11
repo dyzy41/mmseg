@@ -49,3 +49,5 @@ data = dict(
         data_root=data_root,
         img_dir='E:\whub01_test/val_list.txt',
         pipeline=test_pipeline))
+
+#pc
