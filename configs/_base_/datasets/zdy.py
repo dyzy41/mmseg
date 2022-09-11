@@ -50,4 +50,4 @@ data = dict(
         img_dir='E:\whub01_test/val_list.txt',
         pipeline=test_pipeline))
 
-#pcsdasdasd
+#ai
