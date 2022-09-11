@@ -1,0 +1,11 @@
+train:
+configs/bisenetv1/bisenetv1_r50-d32_lr5e-3_4x4_512x512_160k_zdy.py --work-dir work_dirs/bisenetv1_r50-d32_lr5e-3_4x4_512x512_160k_zdy.py/ --deterministic
+
+test:
+configs/bisenetv1/bisenetv1_r50-d32_lr5e-3_4x4_512x512_160k_zdy.py work_dirs/bisenetv1_r50-d32_lr5e-3_4x4_512x512_160k_zdy.py/latest.pth --eval mIoU
+
+
+configs/bisenetv1/bisenetv1_r50-d32_lr5e-3_4x4_512x512_160k_zdy.py
+work_dirs/bisenetv1_r50-d32_lr5e-3_4x4_512x512_160k_zdy.py/latest.pth
+--show
+--eval mIoU
